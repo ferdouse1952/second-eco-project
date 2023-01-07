@@ -1,0 +1,51 @@
+[
+	{
+	  "id": 1,
+	  "discount": 50,
+	  "cover": "https://pngimg.com/uploads/dress/dress_PNG48.png",
+	  "name": "Women Dress",
+	  "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et    magnis dis parturient montes, nascetur ridiculus mus. Vestibulum ultricies aliquam. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim donec pede justo1.",
+	  "price": 100
+	},
+	{
+	  "id": 2,
+	  "discount": 50,
+	  "cover": "https://pngimg.com/uploads/dress_shirt/dress_shirt_PNG8117.png",
+	  "name": "Men Dress",
+	  "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et    magnis dis parturient montes, nascetur ridiculus mus. Vestibulum ultricies aliquam. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim donec pede justo2.",
+	  "price": 100
+	},
+	{
+	  "id": 3,
+	  "discount": 50,
+	  "cover": "https://pngimg.com/uploads/watches/watches_PNG101455.png",
+	  "name": "Watch",
+	  "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et    magnis dis parturient montes, nascetur ridiculus mus. Vestibulum ultricies aliquam. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim donec pede justo3.",
+	  "price": 100
+	},
+	{
+	  "id": 4,
+	  "discount": 50,
+	  "cover": "https://freepngimg.com/thumb/shoes/21849-6-dock-shoes.png",
+	  "name": "Shoes",
+	  "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et    magnis dis parturient montes, nascetur ridiculus mus. Vestibulum ultricies aliquam. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim donec pede justo4.",
+	  "price": 100
+	},
+	{
+	  "id": 5,
+	  "discount": 50,
+	  "cover": "https://www.pngmart.com/files/7/Baby-Clothes-PNG-Transparent-HD-Photo.png",
+	  "name": "Baby Dress",
+	  "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et    magnis dis parturient montes, nascetur ridiculus mus. Vestibulum ultricies aliquam. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim donec pede justo5.",
+	  "price": 100
+	},
+	{
+	  "id": 6,
+	  "discount": 50,
+	  "cover": "https://pngimg.com/uploads/backpack/backpack_PNG6312.png",
+	  "name": "Bag",
+	  "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et    magnis dis parturient montes, nascetur ridiculus mus. Vestibulum ultricies aliquam. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim donec pede justo6.",
+	  "price": 100
+	}
+	
+  ]

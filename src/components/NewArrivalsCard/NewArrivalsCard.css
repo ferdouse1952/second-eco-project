@@ -1,0 +1,12 @@
+.newArrivalsCard{
+    font-family: 'Poppins', sans-serif;
+}
+.newArrivalImg{
+    width: 298px;
+}
+.newArrivalImg img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+}

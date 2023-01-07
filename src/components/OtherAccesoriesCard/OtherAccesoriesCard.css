@@ -1,0 +1,19 @@
+.otherAccesoriesCard{
+    font-family: 'Poppins', sans-serif;
+}
+.accesoriesImg{
+    width: 220px;
+    height: 250px;
+}
+.accesoriesImg img{
+    width: 100%;
+    height: 100%;
+}
+.outlook{
+    position: relative;
+    opacity: 0;
+    transition: 0.5s;
+}
+.otherAccesoriesCard:hover .outlook{
+    opacity: 1;
+}

@@ -1,0 +1,35 @@
+.flash{
+    font-family: 'Poppins', sans-serif;
+}
+.flash h3, i{
+    color: #1E152F;
+}
+.control-btn .next,
+.control-btn .prev{
+  position: absolute;
+  top: 40%;
+  width: 50px;
+  height: 50px;
+  background: #1E152F;
+  border-radius: 50%;
+  transition: 0.5s;
+  z-index: 5;
+}
+.control-btn .prev{
+    left: -20px;
+}
+.control-btn .next{
+    right: -20px;
+}
+.control-btn .next i,
+.control-btn .prev i{
+  font-size: 20px;
+  transition: 0.5s;
+  color: #fff;
+}
+.control-btn .next:hover,
+.control-btn .prev:hover{
+  background: #862F3D;
+  color: #fff;
+  cursor: pointer;
+}

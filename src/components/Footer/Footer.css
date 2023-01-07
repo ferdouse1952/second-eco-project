@@ -1,0 +1,15 @@
+.footer{
+    font-family: 'Poppins', sans-serif;
+    background-color: #1E152F;
+    padding: 50px 80px ;
+ }
+ .footer-logo{
+     width: 150px;
+ }
+ .footer-logo img{
+     width: 100%;
+     height: 100%;
+ }
+ li{
+     list-style: none;
+ }

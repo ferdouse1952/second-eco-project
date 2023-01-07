@@ -1,0 +1,46 @@
+.flash{
+    font-family: 'Poppins', sans-serif;
+}
+.coverImg{
+    width: 100px;
+    height: 130px;
+}
+.coverImg img{
+    width: 100%;
+    height: 100%;
+}
+.discount{
+    font-size: 15px;
+    padding: 5px 10px;
+    background-color: #1E152F;
+}
+.outlook span{
+    background-color: #862F3D;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+.rate i{
+    padding-right: 4px;
+    color: orange;
+}
+.outlook{
+    position: relative;
+    opacity: 0;
+    transition: 0.5s;
+}
+.flash:hover .outlook{
+    opacity: 1;
+}
+.plus-btn i{
+    color: #862F3D;
+    font-weight: 600;
+    border: 1px solid rgb(3 0 71/9%);
+    padding: 7px 8px;
+    transition: 0.5s;
+}
+.plus-btn:hover i{
+    cursor: pointer;
+    background-color: #862F3D;
+    color: #fff;
+}

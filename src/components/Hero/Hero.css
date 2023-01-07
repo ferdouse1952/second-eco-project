@@ -1,0 +1,71 @@
+.hero-section{
+    padding: 80px 0px;
+}
+.cat-slide-row{
+    height: 60vh;
+    font-family: 'Poppins', sans-serif;
+}
+.categorie{
+    background-color: #1E152F;
+}
+.category-list{
+    padding: 20px 10px;
+}
+a{
+    text-decoration: none;
+}
+.box{
+    width: 20px;
+}
+.box img{
+    width: 100%;
+    height: 100%;
+}
+.box p{
+    color: #1E152F;
+}
+.catecol{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.slideImg{
+    width: 200px;
+}
+.slideImg img{
+    width: 100%;
+    height: 100%;
+}
+.left button{
+    background-color: #862f3d
+}
+.slide h1{
+    color: #1E152F;
+}
+.slide button{
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 20px;
+}
+.slide ul{
+    position: absolute;
+}
+.slide ul li{
+    border: 2px solid #193B3D;
+    border-radius: 50%;
+    padding: 10px;
+    
+}
+.slide ul li button{
+    background: transparent;
+}
+.slide ul li button::before{
+    font-size: 15px;
+    color: #0F3460;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    margin: auto;
+
+}
+
+
+

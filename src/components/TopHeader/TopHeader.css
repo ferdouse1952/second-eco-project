@@ -1,0 +1,22 @@
+.head{
+    background-color: #1E152F;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 80px ;
+}
+.head label{
+    font-size: 14px;
+}
+
+
+@media screen and (max-width:992px) {
+   
+    .head{
+        padding: 10px 30px ;
+    }
+}
+@media screen and (max-width:900px) {
+   
+    .head{
+       display: none;
+    }
+}

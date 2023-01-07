@@ -1,0 +1,125 @@
+.input-box {
+    position: relative;
+    height: 50px;
+    max-width: 900px;
+    width: 100%;
+    background: #fff;
+    margin: 0 20px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .input-box i,
+  .input-box .button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .input-box i {
+    left: 20px;
+    font-size: 30px;
+    color: #707070;
+  }
+  .input-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    padding: 0 155px 0 65px;
+    background-color: transparent;
+  }
+  .input-box .button {
+    right: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 6px;
+    background-color: #1E152F;
+    cursor: pointer;
+  }
+  .input-box .button.clicked {
+    transform: translateY(-50%) scale(0.98);
+  }
+
+  /* Responsive */
+ @media screen and (max-width:1442px) {
+    .input-box {
+      width: 600px;
+      height: 50px;
+      /* margin: 0 8px; */
+    }
+    .input-box i {
+      left: 12px;
+      font-size: 25px;
+    }
+    .input-box input {
+      padding: 0 112px 0 50px;
+    }
+    .input-box .button {
+      right: 12px;
+      font-size: 14px;
+      padding: 8px 18px;
+    }
+  }
+ @media screen and (max-width:1192px) {
+    .input-box {
+      width: 500px;
+      height: 50px;
+      /* margin: 0 8px; */
+    }
+    .input-box i {
+      left: 12px;
+      font-size: 25px;
+    }
+    .input-box input {
+      padding: 0 112px 0 50px;
+    }
+    .input-box .button {
+      right: 12px;
+      font-size: 14px;
+      padding: 8px 18px;
+    }
+  }
+ @media screen and (max-width:1092px) {
+    .input-box {
+      width: 395px;
+      height: 50px;
+      /* margin: 0 8px; */
+    }
+    .input-box i {
+      left: 12px;
+      font-size: 25px;
+    }
+    .input-box input {
+      padding: 0 112px 0 50px;
+    }
+    .input-box .button {
+      right: 12px;
+      font-size: 14px;
+      padding: 8px 18px;
+    }
+  }
+  
+ @media screen and (max-width:991px) {
+    .input-box {
+      width: 900px;
+      height: 50px;
+      margin: 10px 8px;
+    }
+    .input-box i {
+      left: 12px;
+      font-size: 25px;
+    }
+    .input-box input {
+      padding: 0 112px 0 50px;
+    }
+    .input-box .button {
+      right: 12px;
+      font-size: 14px;
+      padding: 8px 18px;
+    }
+  }
+  
