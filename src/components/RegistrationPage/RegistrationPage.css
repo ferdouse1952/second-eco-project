@@ -1,0 +1,8 @@
+.loginRegistration{
+    font-family: 'Poppins', sans-serif;
+    padding: 150px 0px 398px;
+
+}
+.emailForm,.passwordForm{
+    width: 450px;
+}

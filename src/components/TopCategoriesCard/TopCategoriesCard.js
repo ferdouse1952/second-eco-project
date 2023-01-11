@@ -6,10 +6,10 @@ const TopCategoriesCard = (props) => {
   return (
     <>
       <div className="topCategories">
-        <div class="col container">
-          <div class="card">
-            <div class="card-body">
-              <div class="text-white fs-6 d-flex justify-content-between">
+        <div className="col container">
+          <div className="card">
+            <div className="card-body">
+              <div className="text-white fs-6 d-flex justify-content-between">
                 <small>{name}</small>
                 <small>{desc}</small>
               </div>

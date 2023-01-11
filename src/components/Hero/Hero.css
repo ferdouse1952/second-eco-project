@@ -47,6 +47,7 @@ a{
 }
 .slide ul{
     position: absolute;
+    
 }
 .slide ul li{
     border: 2px solid #193B3D;
@@ -62,8 +63,7 @@ a{
     color: #0F3460;
     position: absolute;
     top: 2px;
-    left: 0;
-    margin: auto;
+    /* margin: auto; */
 
 }
 

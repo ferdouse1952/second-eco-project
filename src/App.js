@@ -9,6 +9,9 @@ import Footer from "./components/Footer/Footer";
 import ProductDetail from "./components/ProductDetail/ProductDetail";
 import Shop from "./components/Shop/Shop";
 import useProducts from "./hooks/useProducts";
+import LoginPage from "./components/LoginPage/LoginPage";
+import RegistrationPage from "./components/RegistrationPage/RegistrationPage";
+import ForgetPasswordPage from "./components/ForgetPasswordPage/ForgetPasswordPage";
 
 function App() {
   const [flashProduct, setFlashProduct] = useProducts();
@@ -70,6 +73,9 @@ function App() {
           }
         />
         <Route path="/flashDealCard/:productId" element={<ProductDetail />} />
+        <Route path="/loginPage" element={<LoginPage />} />
+        <Route path="/registration" element={<RegistrationPage />} />
+        <Route path="/forgetPassword" element={<ForgetPasswordPage />} />
       </Routes>
       <Footer />
     </div>

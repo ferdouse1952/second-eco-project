@@ -1,47 +1,47 @@
 [
-    {
+    { "id":1,
       "cover": "https://images.pexels.com/photos/1649771/pexels-photo-1649771.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "name": "BenuX 2022",
       "price": 250
     },
-    {
+    { "id":2,
       "cover": "https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "name": "Sony Monitor 1080p",
+      "name": "Sony Monitor 1080p",
       "price": 450
     },
-    {
+    { "id":3,
       "cover": "https://images.pexels.com/photos/2885014/pexels-photo-2885014.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "name": "Sony PS4",
       "price": 50
     },
-    {
+    { "id":4,
       "cover": "https://images.pexels.com/photos/1203803/pexels-photo-1203803.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "name": "Setgearr 2022",
+      "name": "Setgearr 2022",
       "price": 100
     },
-    {
+    { "id":5,
       "cover": "https://images.pexels.com/photos/191877/pexels-photo-191877.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    "name": "Sound Box",
+      "name": "Sound Box",
       "price": 20
     },
-    {
+    { "id":6,
       "cover": "https://images.pexels.com/photos/280250/pexels-photo-280250.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    "name": "Watch",
+      "name": "Watch",
       "price": 200
     },
-    {
+    { "id":7,
       "cover": "https://images.pexels.com/photos/3780681/pexels-photo-3780681.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "name": "Ear Phone",
+      "name": "Ear Phone",
       "price": 300
     },
-    {
+    { "id":8,
       "cover": "https://images.pexels.com/photos/1279365/pexels-photo-1279365.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "name": "Speaker",
+      "name": "Speaker",
       "price": 30
     },
-    {
+    { "id":9,
       "cover": "https://images.pexels.com/photos/5966513/pexels-photo-5966513.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    "name": "CCTV",
+      "name": "CCTV",
       "price": 80
     }
   ]

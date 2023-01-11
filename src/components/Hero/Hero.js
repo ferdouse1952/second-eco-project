@@ -67,9 +67,7 @@ const Hero = () => {
                 return (
                   <Link className="box d-flex" key={index}>
                     <img src={value.cateImg} alt="" />
-                    <p className="ps-4 fw-semibold">
-                      {value.cateName}
-                    </p>
+                    <p className="ps-4 fw-semibold">{value.cateName}</p>
                   </Link>
                 );
               })}
@@ -79,11 +77,15 @@ const Hero = () => {
             <Slider {...settings}>
               {Sdata.map((value, index) => {
                 return (
-                  <div className="d-flex" key={index}>
+                  <div className="d-flex pb-5" key={index}>
                     <div className="left">
                       <h1>{value.title}</h1>
                       <p>{value.desc}</p>
-                      <button className="border-0 rounded text-white">Visit Collections</button>
+                      <Link to="/shop">
+                        <button className="border-0 rounded text-white">
+                          Visit Collections
+                        </button>
+                      </Link>
                     </div>
                     <div className="slideImg">
                       <img src={value.cover} alt="" />
