@@ -6,3 +6,9 @@
 .emailForm,.passwordForm{
     width: 450px;
 }
+.registrationButton{
+    background-color: #0F3460;
+}
+.registrationButton:hover{
+    background-color: #1E152F;
+}

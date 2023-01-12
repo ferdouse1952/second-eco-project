@@ -110,7 +110,7 @@ const RegistrationPage = () => {
           {success && (
             <p className="text-success">Registration completed successfully</p>
           )}
-          <Button variant="primary" type="submit">
+          <Button className="registrationButton" variant="primary" type="submit">
             Register
           </Button>
           <div className="d-flex align-items-center">

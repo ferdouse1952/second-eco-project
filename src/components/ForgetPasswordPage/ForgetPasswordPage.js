@@ -43,7 +43,7 @@ const ForgetPasswordPage = () => {
             />
           </Form.Group>
 
-          <Button variant="primary" type="submit">
+          <Button className="sendButton" variant="primary" type="submit">
             Send
           </Button>
         </Form>

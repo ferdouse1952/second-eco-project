@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import app from "../../firebase.init";
+import SignInWithGoogle from "../SignInWithGoogle/SignInWithGoogle";
 import "./LoginPage.css";
 
 const auth = getAuth(app);
@@ -32,8 +33,10 @@ const LoginPage = () => {
   return (
     <>
       <div className="container">
-        <Form className="loginRegistration" onSubmit={handleLogin}>
+        <SignInWithGoogle />
+        <Form className="loginPage" onSubmit={handleLogin}>
           <h3 className="pb-3">LogIn</h3>
+
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
             <Form.Control
@@ -63,7 +66,7 @@ const LoginPage = () => {
 
           <p className="text-danger">{passWordError}</p>
           {success && <p className="text-success">Successfully LogIn</p>}
-          <Button variant="primary" type="submit">
+          <Button className="logInButton" variant="primary" type="submit">
             LogIn
           </Button>
           <div className="d-flex align-items-center">

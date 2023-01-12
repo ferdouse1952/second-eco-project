@@ -12,6 +12,7 @@ import useProducts from "./hooks/useProducts";
 import LoginPage from "./components/LoginPage/LoginPage";
 import RegistrationPage from "./components/RegistrationPage/RegistrationPage";
 import ForgetPasswordPage from "./components/ForgetPasswordPage/ForgetPasswordPage";
+import SignInWithGoogle from "./components/SignInWithGoogle/SignInWithGoogle";
 
 function App() {
   const [flashProduct, setFlashProduct] = useProducts();
@@ -74,6 +75,7 @@ function App() {
         />
         <Route path="/flashDealCard/:productId" element={<ProductDetail />} />
         <Route path="/loginPage" element={<LoginPage />} />
+        <Route path="/signInwithGoogle" element={<SignInWithGoogle />} />
         <Route path="/registration" element={<RegistrationPage />} />
         <Route path="/forgetPassword" element={<ForgetPasswordPage />} />
       </Routes>

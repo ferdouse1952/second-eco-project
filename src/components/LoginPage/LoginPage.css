@@ -1,8 +1,21 @@
-.loginRegistration{
+.loginPage{
     font-family: 'Poppins', sans-serif;
-    padding: 150px 0px 398px;
-
+    padding: 20px 0 295px;
 }
 .emailForm,.passwordForm{
     width: 450px;
+}
+.emailForm.form-control:focus {
+    box-shadow: none;
+    border-color: #0F3460;
+}
+.passwordForm.form-control:focus{
+    box-shadow: none;
+    border-color: #0F3460;
+}
+.logInButton{
+    background-color: #0F3460;
+}
+.logInButton:hover{
+    background-color: #1E152F;
 }

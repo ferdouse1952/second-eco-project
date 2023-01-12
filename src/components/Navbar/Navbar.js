@@ -1,44 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../../Images/logo.png";
 import SearchBar from "../SearchBar/SearchBar";
-import {
-  getAuth,
-  GoogleAuthProvider,
-  signInWithPopup,
-  signOut,
-} from "firebase/auth";
-import app from "../../firebase.init";
 
-const auth = getAuth(app);
 const Navbar = ({ cartItem }) => {
-  const [user, setUser] = useState({});
-  const provider = new GoogleAuthProvider();
-
-  const handleSignIn = () => {
-    signInWithPopup(auth, provider)
-      .then((result) => {
-        // The signed-in user info.
-        const user = result.user;
-        setUser(user);
-        console.log(user);
-      })
-      .catch((error) => {
-        console.error(error);
-      });
-  };
-  const handleSignOut = () => {
-    const auth = getAuth();
-    signOut(auth)
-      .then(() => {
-        // Sign-out successful.
-        setUser({});
-      })
-      .catch((error) => {
-        // An error happened.
-      });
-  };
   return (
     <>
       <nav className="navbar navber navbar-expand-lg sticky-top pt-4">
@@ -87,15 +53,9 @@ const Navbar = ({ cartItem }) => {
           </div>
           <div className="fs-5 text-center">
             <Link to="/loginPage">
-              {user.email ? (
-                <button className="border-0 bg-white" onClick={handleSignOut}>
-                  SignOut
-                </button>
-              ) : (
-                <button className="border-0 bg-white" onClick={handleSignIn}>
-                  <i className="fa fa-user icon-circle navIcon pt-3"></i>
-                </button>
-              )}
+              <button className="border-0 bg-white">
+                <i className="fa fa-user icon-circle navIcon pt-3"></i>
+              </button>
             </Link>
             <Link className="ps-4 cart" to="/cart">
               <i className="fa fa-shopping-bag icon-circle navIcon pt-3"></i>
