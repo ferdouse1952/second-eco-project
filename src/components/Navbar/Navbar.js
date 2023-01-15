@@ -4,7 +4,7 @@ import "./Navbar.css";
 import logo from "../../Images/logo.png";
 import SearchBar from "../SearchBar/SearchBar";
 
-const Navbar = ({ cartItem }) => {
+const Navbar = ({ cartItem, flashProduct }) => {
   return (
     <>
       <nav className="navbar navber navbar-expand-lg sticky-top pt-4">
@@ -15,7 +15,7 @@ const Navbar = ({ cartItem }) => {
             </div>
           </Link>
 
-          <SearchBar />
+          <SearchBar flashProduct={flashProduct} />
 
           <div className="menu fs-6">
             <button

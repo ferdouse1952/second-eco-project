@@ -4,7 +4,7 @@ import Benifits from "../Benifits/Benifits";
 import FlashDeals from "../FlashDeals/FlashDeals";
 import Hero from "../Hero/Hero";
 
-const Home = ({ addToCard, flashProduct, OtherAccesoriesProduct }) => {
+const Home = ({ addToCard, flashProduct }) => {
   return (
     <>
       <Hero />

@@ -16,7 +16,6 @@ const LoginPage = () => {
     const form = event.target;
     const email = form.email.value;
     const password = form.password.value;
-    console.log(email, password);
     setPassWordError("");
     signInWithEmailAndPassword(auth, email, password)
       .then((result) => {

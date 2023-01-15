@@ -77,7 +77,7 @@ const Hero = () => {
             <Slider {...settings}>
               {Sdata.map((value, index) => {
                 return (
-                  <div className="d-flex pb-5" key={index}>
+                  <div className="d-flex slideDetails" key={index}>
                     <div className="left">
                       <h1>{value.title}</h1>
                       <p>{value.desc}</p>

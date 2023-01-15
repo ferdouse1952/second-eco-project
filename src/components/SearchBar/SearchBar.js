@@ -1,14 +1,55 @@
-import React from "react";
-
+import React, { useState } from "react";
+import SearchDetails from "../SearchDetails/SearchDetails";
 import "./SearchBar.css";
 
-const SearchBar = () => {
+const SearchBar = ({ flashProduct }) => {
+  const [filteredData, setFilteredData] = useState([]);
+  const [wordEntered, setWordEntered] = useState("");
+  const handleFilter = (event) => {
+    const searchWord = event.target.value;
+    setWordEntered(searchWord);
+    const newFilter = flashProduct.filter((value) => {
+      return value.category.toLowerCase().includes(searchWord.toLowerCase());
+    });
+    if (searchWord === "") {
+      setFilteredData([]);
+    } else {
+      setFilteredData(newFilter);
+    }
+  };
+  const clearInput = () => {
+    setFilteredData([]);
+    setWordEntered("");
+  };
+
   return (
     <>
-      <div className="input-box">
-        <i className="fa fa-search"></i>
-        <input type="text" placeholder="Search here..." />
-        <button className="button">Search</button>
+      <div className="search">
+        <input
+          type="text"
+          placeholder="Search here..."
+          value={wordEntered}
+          onChange={handleFilter}
+        />
+
+        {filteredData.length === 0 ? (
+          <i className="fa fa-search"></i>
+        ) : (
+          <i className="fa fa-close closeBtn" onClick={clearInput}></i>
+        )}
+
+        {filteredData.length !== 0 && (
+          <div className="dataResult mt-2" onClick={clearInput}>
+            {filteredData.map((product) => (
+              <SearchDetails
+                product={product}
+                key={product.id}
+                setFilteredData={setFilteredData}
+                setWordEntered={setWordEntered}
+              ></SearchDetails>
+            ))}
+          </div>
+        )}
       </div>
     </>
   );

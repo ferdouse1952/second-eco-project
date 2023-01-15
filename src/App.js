@@ -52,7 +52,7 @@ function App() {
   };
   return (
     <div>
-      <Header cartItem={cartItem} />
+      <Header cartItem={cartItem} flashProduct={flashProduct}  />
       <Routes>
         <Route
           path="/"

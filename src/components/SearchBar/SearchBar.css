@@ -1,4 +1,4 @@
-.input-box {
+.search {
     position: relative;
     height: 50px;
     max-width: 900px;
@@ -8,18 +8,21 @@
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
-  .input-box i,
-  .input-box .button {
+  .search i,
+  .search .button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
   }
-  .input-box i {
-    left: 20px;
-    font-size: 30px;
+  .search i {
+    right: 20px;
+    font-size: 26px;
     color: #707070;
   }
-  .input-box input {
+  .search .closeBtn{
+    cursor: pointer;
+  }
+  .search input {
     height: 100%;
     width: 100%;
     outline: none;
@@ -29,97 +32,93 @@
     padding: 0 155px 0 65px;
     background-color: transparent;
   }
-  .input-box .button {
-    right: 20px;
-    font-size: 16px;
-    font-weight: 500;
-    color: #fff;
-    border: none;
-    padding: 8px 25px;
-    border-radius: 6px;
-    background-color: #1E152F;
-    cursor: pointer;
-  }
-  .input-box .button.clicked {
-    transform: translateY(-50%) scale(0.98);
-  }
 
+  .dataResult{
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 8px;
+    height: 300px;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+  .dataResult::-webkit-scrollbar{
+    display: none;
+  }
+  .productDetails{
+      padding: 6px 60px 0px;
+  }
+  /* .productDetails:hover{
+    background-color: rgb(211, 204, 204);
+  } */
+
+  .searchImg{
+    width: 40px;
+    height: 40px;
+  }
+  .searchImg img{
+    width: 100%;
+    height: 100%;
+  }
   /* Responsive */
  @media screen and (max-width:1442px) {
-    .input-box {
+    .search {
       width: 600px;
       height: 50px;
       /* margin: 0 8px; */
     }
-    .input-box i {
+    .search i {
       left: 12px;
       font-size: 25px;
     }
-    .input-box input {
+    .search input {
       padding: 0 112px 0 50px;
     }
-    .input-box .button {
-      right: 12px;
-      font-size: 14px;
-      padding: 8px 18px;
-    }
+  
   }
  @media screen and (max-width:1192px) {
-    .input-box {
+    .search {
       width: 500px;
       height: 50px;
-      /* margin: 0 8px; */
+     
     }
-    .input-box i {
+    .search i {
       left: 12px;
       font-size: 25px;
     }
-    .input-box input {
+    .search input {
       padding: 0 112px 0 50px;
     }
-    .input-box .button {
-      right: 12px;
-      font-size: 14px;
-      padding: 8px 18px;
-    }
+  
   }
  @media screen and (max-width:1092px) {
-    .input-box {
+    .search {
       width: 395px;
       height: 50px;
-      /* margin: 0 8px; */
+     
     }
-    .input-box i {
+    .search i {
       left: 12px;
       font-size: 25px;
     }
-    .input-box input {
+    .search input {
       padding: 0 112px 0 50px;
     }
-    .input-box .button {
-      right: 12px;
-      font-size: 14px;
-      padding: 8px 18px;
-    }
+   
   }
   
  @media screen and (max-width:991px) {
-    .input-box {
+    .search {
       width: 900px;
       height: 50px;
       margin: 10px 8px;
     }
-    .input-box i {
+    .search i {
       left: 12px;
       font-size: 25px;
     }
-    .input-box input {
+    .search input {
       padding: 0 112px 0 50px;
     }
-    .input-box .button {
-      right: 12px;
-      font-size: 14px;
-      padding: 8px 18px;
-    }
+  
   }
   
