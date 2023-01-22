@@ -68,13 +68,13 @@ const RegistrationPage = () => {
   };
   return (
     <>
-      <div className="container">
-        <Form className="loginRegistration" onSubmit={handleRegister}>
+      <div className="container pt-5">
+        <Form className="registration pt-5 text-center" onSubmit={handleRegister}>
           <h3 className="pb-3">Registration</h3>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Your Name</Form.Label>
             <Form.Control
-              className="emailForm"
+              className="emailForm mx-auto"
               type="text"
               name="name"
               placeholder="Enter Your Name"
@@ -84,7 +84,7 @@ const RegistrationPage = () => {
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
             <Form.Control
-              className="emailForm"
+              className="regiemailForm mx-auto"
               type="email"
               name="email"
               placeholder="Enter email"
@@ -98,7 +98,7 @@ const RegistrationPage = () => {
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <Form.Label>Password</Form.Label>
             <Form.Control
-              className="passwordForm"
+              className="regipasswordForm mx-auto"
               type="password"
               name="password"
               placeholder="Password"
@@ -113,8 +113,8 @@ const RegistrationPage = () => {
           <Button className="registrationButton" variant="primary" type="submit">
             Register
           </Button>
-          <div className="d-flex align-items-center">
-            <p className="pt-3">Have an account?</p>
+          <div className="d-flex align-items-center justify-content-center">
+            <p className="pt-3 pe-4">Have an account?</p>
             <Link to="/loginPage" className="ps-5">
               LogIn
             </Link>

@@ -26,8 +26,8 @@ const ForgetPasswordPage = () => {
   };
   return (
     <>
-      <div className="container">
-        <Form className="forgetPassword" onClick={handleForgetPassword}>
+      <div className="container pt-5">
+        <Form className="forgetPassword text-center" onClick={handleForgetPassword}>
           <h3 className="pb-2">Password Reset</h3>
           <small>
             Enter your email address that you used to register. We'll send you
@@ -37,7 +37,7 @@ const ForgetPasswordPage = () => {
             <Form.Label>Email address</Form.Label>
             <Form.Control
               onBlur={handleEmailBlur}
-              className="emailForm"
+              className="emailForm mx-auto"
               type="email"
               placeholder="Enter email"
             />

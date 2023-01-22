@@ -7,7 +7,7 @@ const NewArrivalsCard = (props) => {
     <>
       <div className="col container pt-4">
         <div className="card newArrivalsCard">
-          <div className="newArrivalImg">
+          <div className="newArrivalImg mx-auto pt-2">
             <img src={cover} alt="" />
           </div>
 

@@ -1,80 +1,116 @@
 import React from "react";
-import logo from "../../Images/logo.png";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 
 const Footer = () => {
   return (
     <>
-      <section className="footer">
-        <div className="row text-white pt-5">
-          <div className="col-3">
-            <div className="footer-logo">
-              <img src={logo} alt="" />
+      <footer className="section bg-footer">
+        <div className="container">
+          <div className="row row-div row-cols-md-4 row-cols-2">
+            <div className="col-lg-3 col-md-3">
+              <h6 className="footer-heading text-uppercase text-white">
+                Information
+              </h6>
+              <ul className="list-unstyled footer-link mt-4">
+                <li>
+                  <Link href="">Pages</Link>
+                </li>
+                <li>
+                  <Link href="">Our Team</Link>
+                </li>
+                <li>
+                  <Link href="">Feuchers</Link>
+                </li>
+                <li>
+                  <Link href="">Pricing</Link>
+                </li>
+              </ul>
             </div>
-            <small>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
-              libero id et, in gravida. Sit diam duis mauris nulla cursus. Erat
-              et lectus vel ut sollicitudin elit at amet.
-            </small>
-          </div>
-          <div className="col-3">
-            <h6 className="ps-4">About Us</h6>
-            <ul className="ps-4">
-              <li>
-                <small>Careers</small>
-              </li>
-              <li>
-                <small>Our Stores</small>
-              </li>
-              <li>
-                <small>Our Cares</small>
-              </li>
-              <li>
-                <small>Terms & Conditions</small>
-              </li>
-              <li>
-                <small>Privacy Policy</small>
-              </li>
-            </ul>
-          </div>
-          <div className="col-3">
-            <h6>Customer Care</h6>
-            <ul className="ps-1">
-              <li>
-                <small>Help Center</small>
-              </li>
-              <li>
-                <small>How to Buy</small>
-              </li>
-              <li>
-                <small>Track Your Order</small>
-              </li>
-              <li>
-                <small>Corporate & Bulk Purchasing</small>
-              </li>
-              <li>
-                <small>Returns & Refunds</small>
-              </li>
-            </ul>
-          </div>
-          <div className="col-3">
-            <h6>Contact Us</h6>
-            <ul className="ps-1">
-              <li>
-                <small>
-                  70 Washington Square South, New York, NY 10012, United States
-                </small>
-              </li>
-              <li>
-                <small>Email: uilib.help@gmail.com</small>
-              </li>
-              <li>
-                <small>Phone: +1 1123 456 780</small>
-              </li>
-            </ul>
+
+            <div className="col-lg-3 col-md-3">
+              <div className="">
+                <h6 className="footer-heading text-uppercase text-white">
+                  Ressources
+                </h6>
+                <ul className="list-unstyled footer-link mt-4">
+                  <li>
+                    <Link>Monitoring Grader </Link>
+                  </li>
+                  <li>
+                    <Link>Video Tutorial</Link>
+                  </li>
+                  <li>
+                    <Link>Term &amp; Service</Link>
+                  </li>
+                  <li>
+                    <Link>Zeeko API</Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="col-lg-2 col-md-2">
+              <div className="">
+                <h6 className="footer-heading text-uppercase text-white">
+                  Help
+                </h6>
+                <ul className="list-unstyled footer-link mt-4">
+                  <li>
+                    <Link>Sign Up </Link>
+                  </li>
+                  <li>
+                    <Link>Login</Link>
+                  </li>
+                  <li>
+                    <Link>Terms of Services</Link>
+                  </li>
+                  <li>
+                    <Link>Privacy Policy</Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="col-lg-4">
+              <div className="">
+                <h6 className="footer-heading text-uppercase text-white">
+                  Contact Us
+                </h6>
+                <p className="contact-info mt-4">
+                  Contact us if need help withanything
+                </p>
+                <p className="contact-info">+01 123-456-7890</p>
+                <div className="mt-5">
+                  <ul className="list-inline">
+                    <li className="list-inline-item">
+                      <Link href="#">
+                        <i className="fab facebook footer-social-icon fa-facebook-f"></i>
+                      </Link>
+                    </li>
+                    <li className="list-inline-item">
+                      <Link href="#">
+                        <i className="fab twitter footer-social-icon fa-twitter"></i>
+                      </Link>
+                    </li>
+                    <li className="list-inline-item">
+                      <Link href="#">
+                        <i className="fab google footer-social-icon fa-instagram"></i>
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
+
+        <div className="text-center mt-5">
+          <p className="footer-alt mb-0 f-14">
+            2019 © Anup, All Rights Reserved
+          </p>
+        </div>
+      </footer>
     </>
   );
 };

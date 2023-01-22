@@ -8,5 +8,9 @@
    border-radius: 50%;
 }
 .iconImg i{
+    width: 100%;
+    height: 100%;
+}
+.iconImg i{
     color: rgb(29, 26, 26);
 }

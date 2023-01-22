@@ -1,4 +1,5 @@
 import React from "react";
+import BenifitsCard from "../BenifitsCard/BenifitsCard";
 import "./Benifits.css";
 
 const Benifits = () => {
@@ -30,27 +31,12 @@ const Benifits = () => {
   ];
   return (
     <>
-      <section className=" container pt-5 pb-5 d-flex">
-        {benifitsData.map((val, index) => {
-          return (
-            <>
-              <div className="col pb-5 container" key={index}>
-                <div className="card border-0 benifits pt-3">
-                  <div className="iconImg text-center mx-auto pt-2">
-                    <i className="fs-3">{val.cover}</i>
-                  </div>
-
-                  <div className="card-body">
-                    <div className="text-dark text-center">
-                      <h3 className="fs-4">{val.title}</h3>
-                      <p>{val.decs}</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </>
-          );
-        })}
+      <section className="container">
+        <div className="row row-cols-lg-4 row-cols-md-2 row-cols-sm-2">
+          {benifitsData.map((data) => (
+            <BenifitsCard key={data.id} data={data}></BenifitsCard>
+          ))}
+        </div>
       </section>
     </>
   );

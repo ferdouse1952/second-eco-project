@@ -1,9 +1,11 @@
+
 .loginPage{
     font-family: 'Poppins', sans-serif;
-    padding: 20px 0 295px;
+    padding-bottom: 310px;
 }
 .emailForm,.passwordForm{
     width: 450px;
+    height: 40px;
 }
 .emailForm.form-control:focus {
     box-shadow: none;
@@ -18,4 +20,17 @@
 }
 .logInButton:hover{
     background-color: #1E152F;
+}
+/* Responsive */
+@media screen and (max-width:500px) {
+ .login{
+    width: 350px;
+
+    }
+ .emailForm{
+    width: 250px;
+}
+.passwordForm{
+    width: 250px;
+}
 }

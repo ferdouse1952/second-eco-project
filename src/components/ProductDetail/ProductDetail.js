@@ -19,12 +19,12 @@ const ProductDetail = () => {
         {/* <h1>This is detail of Product: {productId}</h1> */}
         <div className="container">
           <div className="row d-flex align-items-center">
-            <div className="col-4">
+            <div className="col-lg-4 col-6">
               <div className="productDetailImg">
                 <img src={productDetails.image} alt="" />
               </div>
             </div>
-            <div className="col-8">
+            <div className="col-lg-8 col-6">
               <h3>Product Name: {productDetails.title}</h3>
               <p>Product detail: {productDetails.description}</p>
               <p>Category: {productDetails.category}</p>

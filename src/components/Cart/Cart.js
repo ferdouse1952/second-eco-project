@@ -11,7 +11,7 @@ const Cart = ({ cartItem, addToCard, decreaseQty, handleRemoveProduct }) => {
       <section className="cart-items pt-5">
         <div className="container">
           <div className="row cart-row pt-4">
-            <div className="cart-details col-8">
+            <div className="cart-details col-lg-8">
               {cartItem.length === 0 && (
                 <h1 className="no-items product">No Items are add in Cart</h1>
               )}
@@ -32,10 +32,10 @@ const Cart = ({ cartItem, addToCard, decreaseQty, handleRemoveProduct }) => {
                           <h5 className="card-title">{item.category}</h5>
                           <p>
                             {item.price}.00 * {item.qty}
-                            <span className="ps-4">${productQty}.00</span>
+                            <span className="ps-1">${productQty}.00</span>
                           </p>
                         </div>
-                        <div className="cart-items-function cart-items-btn pe-4">
+                        <div className="cart-items-function cart-items-btn">
                           <div className="removeCart pt-3">
                             <button
                               className="border-0 bg-white"
@@ -69,7 +69,7 @@ const Cart = ({ cartItem, addToCard, decreaseQty, handleRemoveProduct }) => {
                 );
               })}
             </div>
-            <div className="cart-total col-4">
+            <div className="cart-total col-lg-4">
               <h2>Cart Summary</h2>
               <hr />
               <div className="d-flex justify-content-between">

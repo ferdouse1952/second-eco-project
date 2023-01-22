@@ -1,9 +1,9 @@
-.loginRegistration{
+.registration{
     font-family: 'Poppins', sans-serif;
-    padding: 150px 0px 398px;
+    padding-bottom: 310px;
 
 }
-.emailForm,.passwordForm{
+.regiemailForm,.regipasswordForm{
     width: 450px;
 }
 .registrationButton{
@@ -11,4 +11,14 @@
 }
 .registrationButton:hover{
     background-color: #1E152F;
+}
+
+/* Responsive */
+@media screen and (max-width:500px) {
+    .regiemailForm{
+       width: 250px;
+   }
+   .regipasswordForm{
+       width: 250px;
+   }
 }

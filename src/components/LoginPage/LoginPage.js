@@ -31,15 +31,15 @@ const LoginPage = () => {
   };
   return (
     <>
-      <div className="container">
+      <div className="container pt-5">
         <SignInWithGoogle />
-        <Form className="loginPage" onSubmit={handleLogin}>
+        <Form className="loginPage text-center pt-5" onSubmit={handleLogin}>
           <h3 className="pb-3">LogIn</h3>
 
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
             <Form.Control
-              className="emailForm"
+              className="emailForm mx-auto"
               type="email"
               name="email"
               placeholder="Enter email"
@@ -54,7 +54,7 @@ const LoginPage = () => {
             <Form.Label>Password</Form.Label>
 
             <Form.Control
-              className="passwordForm"
+              className="passwordForm mx-auto"
               type="password"
               name="password"
               placeholder="Password"
@@ -68,11 +68,9 @@ const LoginPage = () => {
           <Button className="logInButton" variant="primary" type="submit">
             LogIn
           </Button>
-          <div className="d-flex align-items-center">
-            <p className="pt-3">Don't have an account?</p>
-            <Link to="/registration" className="ps-5">
-              Registration
-            </Link>
+          <div className="d-flex align-items-center justify-content-center">
+            <p className="pt-3 pe-4">Don't have an account?</p>
+            <Link to="/registration">Registration</Link>
           </div>
         </Form>
       </div>

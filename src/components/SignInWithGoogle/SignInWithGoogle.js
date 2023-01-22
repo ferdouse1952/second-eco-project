@@ -37,7 +37,7 @@ const SignInWithGoogle = () => {
   };
   return (
     <>
-      <div className="googleLogIn">
+      <div className="googleLogIn text-center">
         {user.email ? (
           <button className="border-0 bg-white" onClick={handleSignOut}>
             SignOut

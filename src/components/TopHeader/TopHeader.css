@@ -1,9 +1,13 @@
 .head{
-    background-color: #1E152F;
+    background-color: #0F3460;
     font-family: 'Poppins', sans-serif;
-    padding: 10px 80px ;
+    padding: 5px 60px ;
 }
 .head label{
+    font-size: 14px;
+}
+.social-row i{
+    padding: 4px;
     font-size: 14px;
 }
 

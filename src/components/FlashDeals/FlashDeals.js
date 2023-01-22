@@ -1,4 +1,6 @@
 import React from "react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Discount from "../Discount/Discount";
 import FlashDealCard from "../FlashDealCard/FlashDealCard";
@@ -36,10 +38,43 @@ const FlashDeals = ({ addToCard, flashProduct }) => {
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ],
   };
   return (
     <>
-      <section className="bg-light">
+      <section className="bg-light pt-5">
         <div className="container">
           <div className="flash d-flex pt-5 pb-4">
             <i className="fa fa-bolt fs-5 pt-2 pe-2"></i>

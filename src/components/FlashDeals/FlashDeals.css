@@ -1,6 +1,6 @@
 .flash{
     font-family: 'Poppins', sans-serif;
-}
+  }
 .flash h3, i{
     color: #1E152F;
 }
@@ -32,4 +32,26 @@
   background: #862F3D;
   color: #fff;
   cursor: pointer;
+}
+
+/* Responsive */
+@media screen and (max-width:576px) {
+  .control-btn .next,
+.control-btn .prev{
+  position: absolute;
+  top: 40%;
+  width: 40px;
+  height: 40px;
+  background: #1E152F;
+  border-radius: 50%;
+  transition: 0.5s;
+  z-index: 5;
+}
+.control-btn .prev{
+  left: -5px;
+}
+.control-btn .next{
+  right: -5px;
+}
+  
 }

@@ -1,13 +1,11 @@
-.newArrivalsCard{
+.discountCard{
     font-family: 'Poppins', sans-serif;
 }
-.newArrivalImg{
+.bigDiscountImg{
     width: 100px;
     height: 150px;
 }
-.newArrivalImg img{
+.bigDiscountImg img{
     width: 100%;
     height: 100%;
 }
-
-/* Responsive */

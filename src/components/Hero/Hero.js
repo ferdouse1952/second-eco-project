@@ -1,61 +1,126 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import firstSlideImg from "../../Images/ladies.png";
+import secondSlideImg from "../../Images/men.png";
+import thirdSlideImg from "../../Images/watch.png";
 import "./Hero.css";
-import Slider from "react-slick/lib/slider";
-import Sdata from "./Sdata";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
-  const data = [
-    {
-      cateImg: "https://cdn-icons-png.flaticon.com/512/1785/1785255.png",
-      cateName: "Women",
-    },
-    {
-      cateImg: "https://cdn-icons-png.flaticon.com/512/6829/6829639.png",
-      cateName: "Men",
-    },
-    {
-      cateImg: "https://cdn-icons-png.flaticon.com/512/4392/4392444.png",
-      cateName: "Children",
-    },
-    {
-      cateImg: "https://cdn-icons-png.flaticon.com/512/2806/2806234.png",
-      cateName: "Tops",
-    },
-    {
-      cateImg: "https://cdn-icons-png.flaticon.com/512/957/957077.png",
-      cateName: "Bottoms",
-    },
-    {
-      cateImg: "https://cdn-icons-png.flaticon.com/512/9027/9027551.png",
-      cateName: "Shoes",
-    },
-    {
-      cateImg: "https://cdn-icons-png.flaticon.com/512/4075/4075666.png",
-      cateName: "Bags",
-    },
-    {
-      cateImg: "https://cdn-icons-png.flaticon.com/512/2806/2806180.png",
-      cateName: "Accessories",
-    },
-  ];
-
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    // appendDots: (dots) => {
-    //   return <ul style={{ margin: "0" }}>{dots}</ul>;
-    // },
-  };
   return (
     <>
-      <section className="container hero-section">
+      <section className="container">
+        <div className="sliderSection pt-5">
+          <div
+            id="carouselExampleSlidesOnly"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner carouselItem">
+              <div class="carousel-item firstSlide active">
+                <div className="firstline"></div>
+                <div className="secondline"></div>
+                <div className="row align-items-center">
+                  <div className="col-8">
+                    <div className="left">
+                      <h1>Finding Your Perfect Dress</h1>
+                      <p className="text-white pb-3 pt-1">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Quisquam placeat eaque nihil modi quam at debitis
+                        asperiores est ipsum? Inventore?
+                      </p>
+                      <div className="button">
+                        <Link to="/shop">
+                          <button className="visitButton border-0 rounded text-white">
+                            Visit Collections
+                          </button>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-4">
+                    <div className="slideImg">
+                      <img
+                        src={firstSlideImg}
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="thirdline"></div>
+                <div className="fourthline"></div>
+              </div>
+              <div class="carousel-item secondSlider">
+                <div className="firstline"></div>
+                <div className="secondline"></div>
+                <div className="row align-items-center">
+                  <div className="col-8">
+                    <div className="left">
+                      <h1>Finding Your Perfect Dress</h1>
+                      <p className="text-white pb-3 pt-1">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Quisquam placeat eaque nihil modi quam at debitis
+                        asperiores est ipsum? Inventore?
+                      </p>
+                      <Link to="/shop">
+                        <button className="visitButton border-0 rounded text-white">
+                          Visit Collections
+                        </button>
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="col-4">
+                    <div className="slideImg">
+                      <img
+                        src={secondSlideImg}
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="thirdline"></div>
+                <div className="fourthline"></div>
+              </div>
+              <div class="carousel-item thirdSlider">
+                <div className="firstline"></div>
+                <div className="secondline"></div>
+                <div className="row align-items-center">
+                  <div className="col-8">
+                    <div className="left">
+                      <h1>Finding Your Perfect Dress</h1>
+                      <p className="text-white pb-3 pt-1">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Quisquam placeat eaque nihil modi quam at debitis
+                        asperiores est ipsum? Inventore?
+                      </p>
+                      <Link to="/shop">
+                        <button className="visitButton border-0 rounded text-white">
+                          Visit Collections
+                        </button>
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="col-4">
+                    <div className="slideImg">
+                      <img
+                        src={thirdSlideImg}
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="thirdline"></div>
+                <div className="fourthline"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* <section className="container hero-section">
         <div className="row cat-slide-row align-items-center">
           <div className="col-3 rounded-bottom catecol p-0">
             <div className="categorie rounded-top d-flex text-white p-2">
@@ -96,7 +161,7 @@ const Hero = () => {
             </Slider>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };

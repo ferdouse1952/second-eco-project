@@ -2,7 +2,7 @@
     font-family: 'Poppins', sans-serif;
 }
 .coverImg{
-    width: 100px;
+    max-width: 100px;
     height: 130px;
 }
 .coverImg img{
@@ -43,4 +43,14 @@
     cursor: pointer;
     background-color: #862F3D;
     color: #fff;
+}
+
+/* Responsive */
+@media screen and (max-width:1199px){
+    .coverImg{
+        width: 90px;
+        height: 130px;
+        padding-top: 10px;
+    }
+    
 }

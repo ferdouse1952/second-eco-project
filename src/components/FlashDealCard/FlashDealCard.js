@@ -21,8 +21,9 @@ const FlashDealCard = ({ addToCard, product }) => {
               </div>
               <div className="outlook">
                 <div className="pe-2" onClick={showProductDetails}>
-                  <span className="fs-6 text-white rounded-pill">Outlook <i className="fa-solid fa-eye text-white"></i></span>
-                  
+                  <span className="fs-6 text-white rounded-pill">
+                    Outlook <i className="fa-solid fa-eye text-white"></i>
+                  </span>
                 </div>
               </div>
             </div>

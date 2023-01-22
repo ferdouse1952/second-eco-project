@@ -9,15 +9,32 @@ const TopCategoriesCard = (props) => {
         <div className="col container">
           <div className="card">
             <div className="card-body">
-              <div className="text-white fs-6 d-flex justify-content-between">
-                <small>{name}</small>
-                <small>{desc}</small>
+              <div className="text-white fs-6 d-md-flex justify-content-between">
+                <p>
+                  <small>{name}</small>
+                </p>
+                <p>
+                  <small>{desc}</small>
+                </p>
               </div>
             </div>
-            <div className="topCatImg d-flex">
-              <img src={cover} alt="" />
-              <img src={cover1} alt="" />
-              <img src={cover2} alt="" />
+
+            <div className="row">
+              <div className="col-4">
+                <div className="topCatImg">
+                  <img src={cover} alt="" />
+                </div>
+              </div>
+              <div className="col-4">
+                <div className="topCatImg">
+                  <img src={cover1} alt="" />
+                </div>
+              </div>
+              <div className="col-4">
+                <div className="topCatImg">
+                  <img src={cover2} alt="" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
